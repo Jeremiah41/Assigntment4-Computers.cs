@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
+            this.PictureBoxStartForm = new System.Windows.Forms.PictureBox();
             this.LabelTitle = new System.Windows.Forms.Label();
             this.ButtonStartOrder = new System.Windows.Forms.Button();
             this.ButtonSavedOrder = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxStartForm)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PictureBoxStartForm
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(88, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 200);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PictureBoxStartForm.InitialImage = ((System.Drawing.Image)(resources.GetObject("PictureBoxStartForm.InitialImage")));
+            this.PictureBoxStartForm.Location = new System.Drawing.Point(88, 94);
+            this.PictureBoxStartForm.Name = "PictureBoxStartForm";
+            this.PictureBoxStartForm.Size = new System.Drawing.Size(252, 200);
+            this.PictureBoxStartForm.TabIndex = 0;
+            this.PictureBoxStartForm.TabStop = false;
             // 
             // LabelTitle
             // 
@@ -99,11 +101,11 @@
             this.Controls.Add(this.ButtonSavedOrder);
             this.Controls.Add(this.ButtonStartOrder);
             this.Controls.Add(this.LabelTitle);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PictureBoxStartForm);
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Corperate Computers";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxStartForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +113,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureBoxStartForm;
         private System.Windows.Forms.Label LabelTitle;
         private System.Windows.Forms.Button ButtonStartOrder;
         private System.Windows.Forms.Button ButtonSavedOrder;

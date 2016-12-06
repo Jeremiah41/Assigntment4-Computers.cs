@@ -65,5 +65,17 @@ namespace StartForm.cs
         {
 
         }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm();
+            orderForm.Show();
+            this.Hide();
+        }
     }
 }
