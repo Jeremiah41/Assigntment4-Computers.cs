@@ -14,11 +14,23 @@ using System.Windows.Forms;
 //App Description: Corperate Computers helps people like trump Equip themselves with the brains they need to take over america.
 namespace StartForm.cs
 {
-    public partial class OrderForm : Form
+    public partial class StartForm : Form
     {
-        public OrderForm()
+        public StartForm()
         {
             InitializeComponent();
+        }
+
+        private void ButtonStartOrder_Click(object sender, EventArgs e)
+        {
+            SelectForm SelectForm = new SelectForm();
+            SelectForm.Show();
+            this.Hide();
+        }
+
+        private void ButtonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

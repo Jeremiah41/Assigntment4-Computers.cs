@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartForm.cs", "StartForm.cs\StartForm.cs.csproj", "{46A4E136-F598-4065-8EAF-2B79A53770EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoerperateComputers.cs", "StartForm.cs\CoerperateComputers.cs.csproj", "{46A4E136-F598-4065-8EAF-2B79A53770EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,6 @@
-﻿namespace StartForm.cs
+﻿
+
+namespace StartForm.cs
 {
     partial class SplashForm
     {
@@ -44,10 +46,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(702, 635);
+            this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Corperation";
+            this.Load += new System.EventHandler(this.SplashForm_Load);
             this.ResumeLayout(false);
 
         }

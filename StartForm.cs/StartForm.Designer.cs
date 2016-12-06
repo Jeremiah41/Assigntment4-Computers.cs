@@ -1,6 +1,6 @@
 ﻿namespace StartForm.cs
 {
-    partial class StartingForm
+    partial class StartForm
     {
         /// <summary>
         /// Required designer variable.
@@ -64,6 +64,7 @@
             this.ButtonStartOrder.TabIndex = 2;
             this.ButtonStartOrder.Text = "Start a New Order";
             this.ButtonStartOrder.UseVisualStyleBackColor = true;
+            this.ButtonStartOrder.Click += new System.EventHandler(this.ButtonStartOrder_Click);
             // 
             // ButtonSavedOrder
             // 
@@ -86,18 +87,21 @@
             this.ButtonExit.TabIndex = 4;
             this.ButtonExit.Text = "Exit";
             this.ButtonExit.UseVisualStyleBackColor = true;
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 465);
+            this.ControlBox = false;
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonSavedOrder);
             this.Controls.Add(this.ButtonStartOrder);
             this.Controls.Add(this.LabelTitle);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Corperate Computers";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
