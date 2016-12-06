@@ -1,6 +1,6 @@
 ﻿namespace StartForm.cs
 {
-    partial class StartForm
+    partial class StartingForm
     {
         /// <summary>
         /// Required designer variable.

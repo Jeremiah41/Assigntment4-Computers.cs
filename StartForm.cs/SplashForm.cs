@@ -21,7 +21,7 @@ namespace StartForm.cs
         {
             TimerSplashForm.Enabled = false;
 
-            StartForm startForm = new StartForm();
+            StartingForm startForm = new StartingForm();
             startForm.Show();
             this.Hide();
         }

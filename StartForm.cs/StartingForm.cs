@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StartForm.cs
 {
-    public partial class StartForm : Form
+    public partial class StartingForm : Form
     {
-        public StartForm()
+        public StartingForm()
         {
             InitializeComponent();
         }

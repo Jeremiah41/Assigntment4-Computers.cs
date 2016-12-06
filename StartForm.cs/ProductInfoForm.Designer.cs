@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxProductInfo = new System.Windows.Forms.GroupBox();
             this.TextBoxModel = new System.Windows.Forms.TextBox();
             this.TextBoxOS = new System.Windows.Forms.TextBox();
             this.TextBoxManufacturer = new System.Windows.Forms.TextBox();
@@ -38,7 +37,7 @@
             this.LabelOS = new System.Windows.Forms.Label();
             this.LabelManufacturer = new System.Windows.Forms.Label();
             this.LabelPlatform = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxTechSpecs = new System.Windows.Forms.GroupBox();
             this.TextBoxWebcam = new System.Windows.Forms.TextBox();
             this.TextBoxGPU = new System.Windows.Forms.TextBox();
             this.TextBoxHDD = new System.Windows.Forms.TextBox();
@@ -67,31 +66,31 @@
             this.ButtonSelectAnotherProduct = new System.Windows.Forms.Button();
             this.ButtonCancel = new System.Windows.Forms.Button();
             this.ButtonNext = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStripProductInfoForm = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.GroupBoxProductInfo.SuspendLayout();
+            this.GroupBoxTechSpecs.SuspendLayout();
+            this.MenuStripProductInfoForm.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // GroupBoxProductInfo
             // 
-            this.groupBox1.Controls.Add(this.TextBoxModel);
-            this.groupBox1.Controls.Add(this.TextBoxOS);
-            this.groupBox1.Controls.Add(this.TextBoxManufacturer);
-            this.groupBox1.Controls.Add(this.TextBoxPlatform);
-            this.groupBox1.Controls.Add(this.LabelModel);
-            this.groupBox1.Controls.Add(this.LabelOS);
-            this.groupBox1.Controls.Add(this.LabelManufacturer);
-            this.groupBox1.Controls.Add(this.LabelPlatform);
-            this.groupBox1.Location = new System.Drawing.Point(22, 122);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(832, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.GroupBoxProductInfo.Controls.Add(this.TextBoxModel);
+            this.GroupBoxProductInfo.Controls.Add(this.TextBoxOS);
+            this.GroupBoxProductInfo.Controls.Add(this.TextBoxManufacturer);
+            this.GroupBoxProductInfo.Controls.Add(this.TextBoxPlatform);
+            this.GroupBoxProductInfo.Controls.Add(this.LabelModel);
+            this.GroupBoxProductInfo.Controls.Add(this.LabelOS);
+            this.GroupBoxProductInfo.Controls.Add(this.LabelManufacturer);
+            this.GroupBoxProductInfo.Controls.Add(this.LabelPlatform);
+            this.GroupBoxProductInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBoxProductInfo.Location = new System.Drawing.Point(22, 122);
+            this.GroupBoxProductInfo.Name = "GroupBoxProductInfo";
+            this.GroupBoxProductInfo.Size = new System.Drawing.Size(832, 100);
+            this.GroupBoxProductInfo.TabIndex = 0;
+            this.GroupBoxProductInfo.TabStop = false;
+            this.GroupBoxProductInfo.Text = "Product Info";
             // 
             // TextBoxModel
             // 
@@ -167,32 +166,33 @@
             this.LabelPlatform.TabIndex = 4;
             this.LabelPlatform.Text = "Platform";
             // 
-            // groupBox2
+            // GroupBoxTechSpecs
             // 
-            this.groupBox2.Controls.Add(this.TextBoxWebcam);
-            this.groupBox2.Controls.Add(this.TextBoxGPU);
-            this.groupBox2.Controls.Add(this.TextBoxHDD);
-            this.groupBox2.Controls.Add(this.TextBoxCPUSpeed);
-            this.groupBox2.Controls.Add(this.TextBoxCPUType);
-            this.groupBox2.Controls.Add(this.TextBoxLCD);
-            this.groupBox2.Controls.Add(this.TextBoxCPUBrand);
-            this.groupBox2.Controls.Add(this.TextBoxCPUNumber);
-            this.groupBox2.Controls.Add(this.TextBoxMemory);
-            this.groupBox2.Controls.Add(this.LabelHDD);
-            this.groupBox2.Controls.Add(this.LabelGPUType);
-            this.groupBox2.Controls.Add(this.LabelWebCam);
-            this.groupBox2.Controls.Add(this.LabelLCDSize);
-            this.groupBox2.Controls.Add(this.LabelCPUNumber);
-            this.groupBox2.Controls.Add(this.LabelCPUSpeed);
-            this.groupBox2.Controls.Add(this.LabelCPUType);
-            this.groupBox2.Controls.Add(this.LabelCPUBrand);
-            this.groupBox2.Controls.Add(this.LabelMemory);
-            this.groupBox2.Location = new System.Drawing.Point(22, 260);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(832, 184);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxWebcam);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxGPU);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxHDD);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxCPUSpeed);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxCPUType);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxLCD);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxCPUBrand);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxCPUNumber);
+            this.GroupBoxTechSpecs.Controls.Add(this.TextBoxMemory);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelHDD);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelGPUType);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelWebCam);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelLCDSize);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelCPUNumber);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelCPUSpeed);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelCPUType);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelCPUBrand);
+            this.GroupBoxTechSpecs.Controls.Add(this.LabelMemory);
+            this.GroupBoxTechSpecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBoxTechSpecs.Location = new System.Drawing.Point(22, 260);
+            this.GroupBoxTechSpecs.Name = "GroupBoxTechSpecs";
+            this.GroupBoxTechSpecs.Size = new System.Drawing.Size(832, 184);
+            this.GroupBoxTechSpecs.TabIndex = 0;
+            this.GroupBoxTechSpecs.TabStop = false;
+            this.GroupBoxTechSpecs.Text = "Tech Specs";
             // 
             // TextBoxWebcam
             // 
@@ -456,21 +456,15 @@
             this.ButtonNext.Text = "Next";
             this.ButtonNext.UseVisualStyleBackColor = true;
             // 
-            // contextMenuStrip1
+            // MenuStripProductInfoForm
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStripProductInfoForm.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(866, 24);
-            this.menuStrip1.TabIndex = 26;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MenuStripProductInfoForm.Location = new System.Drawing.Point(0, 0);
+            this.MenuStripProductInfoForm.Name = "MenuStripProductInfoForm";
+            this.MenuStripProductInfoForm.Size = new System.Drawing.Size(866, 24);
+            this.MenuStripProductInfoForm.TabIndex = 26;
             // 
             // fileToolStripMenuItem
             // 
@@ -488,7 +482,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(866, 529);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStripProductInfoForm);
             this.Controls.Add(this.ButtonNext);
             this.Controls.Add(this.ButtonCancel);
             this.Controls.Add(this.ButtonSelectAnotherProduct);
@@ -499,18 +493,18 @@
             this.Controls.Add(this.LabelCost);
             this.Controls.Add(this.LabelProductID);
             this.Controls.Add(this.LabelCondition);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.GroupBoxTechSpecs);
+            this.Controls.Add(this.GroupBoxProductInfo);
+            this.MainMenuStrip = this.MenuStripProductInfoForm;
             this.Name = "ProductInfoForm";
             this.Text = "ProductInfoForm";
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.GroupBoxProductInfo.ResumeLayout(false);
+            this.GroupBoxProductInfo.PerformLayout();
+            this.GroupBoxTechSpecs.ResumeLayout(false);
+            this.GroupBoxTechSpecs.PerformLayout();
+            this.MenuStripProductInfoForm.ResumeLayout(false);
+            this.MenuStripProductInfoForm.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,7 +512,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GroupBoxProductInfo;
         private System.Windows.Forms.TextBox TextBoxModel;
         private System.Windows.Forms.TextBox TextBoxOS;
         private System.Windows.Forms.TextBox TextBoxManufacturer;
@@ -527,7 +521,7 @@
         private System.Windows.Forms.Label LabelOS;
         private System.Windows.Forms.Label LabelManufacturer;
         private System.Windows.Forms.Label LabelPlatform;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox GroupBoxTechSpecs;
         private System.Windows.Forms.TextBox TextBoxWebcam;
         private System.Windows.Forms.TextBox TextBoxGPU;
         private System.Windows.Forms.TextBox TextBoxHDD;
@@ -556,8 +550,7 @@
         private System.Windows.Forms.Button ButtonSelectAnotherProduct;
         private System.Windows.Forms.Button ButtonCancel;
         private System.Windows.Forms.Button ButtonNext;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStripProductInfoForm;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
     }
